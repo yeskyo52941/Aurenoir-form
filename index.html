@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>AURENOIR 手錶客製需求</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: #000;
+      color: #f0c674;
+      padding: 2rem;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background: #333;
+      color: white;
+      border: 1px solid #f0c674;
+    }
+    input[type="submit"] {
+      background: #f0c674;
+      color: #000;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #dcb860;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AURENOIR 客製手錶表單</h1>
+
+  <form action="https://docs.google.com/forms/d/e/你的ID/formResponse" method="POST" target="_blank">
+    <input type="text" name="entry.1234567890" placeholder="姓名" required>
+    <input type="email" name="entry.9876543210" placeholder="Email" required>
+
+    <select name="entry.1111222233">
+      <option value="">目標配戴者</option>
+      <option value="男性">男性</option>
+      <option value="女性">女性</option>
+      <option value="中性">中性</option>
+    </select>
+
+    <select name="entry.2222333444">
+      <option value="">風格偏好</option>
+      <option value="經典黑金">經典黑金</option>
+      <option value="極簡設計">極簡設計</option>
+      <option value="運動風格">運動風格</option>
+    </select>
+
+    <select name="entry.3333444555">
+      <option value="">錶帶材質</option>
+      <option value="真皮">真皮</option>
+      <option value="金屬">金屬</option>
+      <option value="帆布">帆布</option>
+    </select>
+
+    <textarea name="entry.4444555666" placeholder="其他客製需求"></textarea>
+
+    <input type="submit" value="送出需求">
+  </form>
+
+</body>
+</html>
